@@ -66,19 +66,13 @@ public class C22_Put_DeSerialization extends JsonPlaceHolderBaseURL {
 
         // 4 - Assertion
 
-        HashMap<String,Object> respMap = response.as(HashMap.class);
+        HashMap<String,Object> respMap = response.as(HashMap.class); // Bu adimda De-Serialization islemini gerceklestirdik
 
         assertEquals(testDataJsonPlaceHolder.basariliStatusCode,response.getStatusCode());
         assertEquals(expBody.get("id") , respMap.get("id"));
         assertEquals(expBody.get("title") , respMap.get("title"));
         assertEquals(expBody.get("body") , respMap.get("body"));
         assertEquals(expBody.get("userId") , respMap.get("userId"));
-
-
-
-
-
-
 
     }
 
