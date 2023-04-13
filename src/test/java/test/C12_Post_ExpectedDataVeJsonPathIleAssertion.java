@@ -16,6 +16,7 @@ public class C12_Post_ExpectedDataVeJsonPathIleAssertion {
     https://restful-booker.herokuapp.com/booking url’ine
     asagidaki body'ye sahip bir POST request gonderdigimizde
     donen response’un id disinda asagidaki gibi oldugunu test edin.
+
                         Request body
                    {
                         "firstname" : "Ahmet",
@@ -28,6 +29,7 @@ public class C12_Post_ExpectedDataVeJsonPathIleAssertion {
                                           },
                         "additionalneeds" : "wi-fi"
                     }
+
                         Response Body - Expected Body
                    {
                     "bookingid":24,
@@ -108,7 +110,7 @@ public class C12_Post_ExpectedDataVeJsonPathIleAssertion {
 
         JSONObject expBody = new JSONObject();
 
-        expBody.put("booking",24);
+        expBody.put("bookingid",24);
         expBody.put("booking",reqBody);
 
         System.out.println("expBody = " + expBody);
