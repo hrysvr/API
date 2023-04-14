@@ -6,17 +6,17 @@ import org.junit.Before;
 
 public class HerokuAppBaseUrl {
 
-    // https://restful-booker.herokuapp.com
+    //https://restful-booker.herokuapp.com
 
     protected RequestSpecification specHerokuApp;
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
         specHerokuApp = new RequestSpecBuilder()
-                                .setBaseUri("https://restful-booker.herokuapp.com")
-                                .build();
+                .setBaseUri("https://restful-booker.herokuapp.com")
+                .build();
 
     }
 }
